@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example</title>
+    <link rel="stylesheet" href="../css/styleHomePage.css">
+
+</head>
+
+<body onload="setUpPage()">
+    <div class="container">
+        <div class="dropdown-filter">
+            <!-- Filter
+            <select>
+                <option>All</option>
+                <option>ID</option>
+                <option>City</option>
+                <option>Phone</option>
+                <option>State</option>
+                <option>Country</option>
+            </select> -->
+            City
+            <select id="cityFilter">
+            </select>
+
+            State
+            <select id="stateFilter">
+            </select>
+
+            Country
+            <select id="countryFilter">
+            </select>
+
+            <button onclick="searchTable()" id="searchButton">SEARCH</button>
+        </div>
+        <!-- <input type="text" id="searchInput" placeholder="Search" onkeyup="searchTable()"> -->
+
+        <!-- table goes in info-div -->
+        <div class="info-div">
+
+        </div>
+
+        <div id="modalPopUp" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <p>No rows selected</p>
+            </div>
+        </div>
+    </div>
+    <script src="../script/homepage_script.js"></script>
+</body>
+
+</html>
